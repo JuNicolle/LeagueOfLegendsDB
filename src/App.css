@@ -1,0 +1,17 @@
+.me-auto{
+  display: flex;
+  gap: 3vw;
+  margin-left: 7vw;
+  }
+
+.linkNavBar{
+  text-decoration: none;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+}
+
+.card{
+  
+}
+
