@@ -14,7 +14,6 @@ const ChampionsPage = () => {
     const fetchChampions = async () => {
         try {
             const response = await ChampionsServices.getAllChampions();
-            console.log(response.data.data);
             setChampions(response.data.data);
         } catch (error) {
             console.error(error);

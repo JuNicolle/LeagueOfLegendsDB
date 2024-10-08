@@ -19,8 +19,6 @@ const NavBarRefonte = () => {
                 </Nav>
             </Container>
         </Navbar>
-
-
     </>
 }
 
