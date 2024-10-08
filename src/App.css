@@ -11,7 +11,78 @@
   color: orange;
 }
 
-.card{
-  
+.bodyBody{
+  background-image: url(assets/detailpagewallpaper.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
+.detailCharacter{
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-between;
+}
+
+.detailCharacter img{
+  width: 40vw;
+  height: 20vw;
+  border-radius: 25px;
+  border: white 2px solid;
+  box-shadow: 0 0 0px -5px white;
+}
+
+.detailCharacterLeftPart{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 4vw;
+  padding-top: 4vh;
+  width: 40vw;
+  color: rgb(83, 36, 66)
+}
+
+.detailCharacterRightPart{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 4vw;
+  padding-top: 4vh;
+  width: 40vw;
+  color: rgb(83, 36, 66)
+}
+
+.loreBody{
+  display: flex ;
+  flex-direction: column;
+  align-items: flex-start;;
+  background-image: url(assets/teemo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh; 
+}
+
+.cardHeros:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  cursor:auto;
+}
+
+.card-body{
+  background-color: rgb(151, 132, 132);
+}
+
+.spellName{
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}

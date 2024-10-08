@@ -26,10 +26,10 @@ useEffect(() => {
 
    return <>
    <div className='backgroundPage'>
-    <h1>Champions</h1>
+    <h1 style={{color : 'whitesmoke'}}>Champions</h1>
     <div className='d-flex justify-content-center gap-5 flex-wrap'>
         {Object.entries(champions).map((champion) => {
-            return <ChampionCard key={champion[1].id} champion={champion[1]} />
+            return <ChampionCard  key={champion[1].id} champion={champion[1]} />
         })}
     </div>
     </div>
