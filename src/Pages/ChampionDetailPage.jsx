@@ -2,11 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ChampionsServices from "../Services/ChampionsServices";
 import ChampionCard from "../Components/ChampionCard";
-import { Container } from "react-bootstrap";
-
-
-
-
 
 
 const ChampionDetailPage = () => {
