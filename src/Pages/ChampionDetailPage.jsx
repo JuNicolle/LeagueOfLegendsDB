@@ -42,9 +42,30 @@ const ChampionDetailPage = () => {
         <div className="detailCharacterLeftPart">
             <h1>Détails de {id}</h1>
             <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`} alt="" />
-             <p>{champion.lore}</p>    
+             <p>{champion.lore}</p> 
+                <div id="tipsSection">
+             <h2>Conseils pour les alliés</h2>   
+             {champion.allytips && champion.allytips.map((tip)=>{
+                // Si champion.allytips existe alors on fait ce qui est dans le return
+                return <p>{tip}</p>
+             })}
+             <h2>Quand vous avez {id} en face de vous</h2>   
+             {champion.enemytips && champion.enemytips.map((tip)=>{
+                // Si champion.allytips existe alors on fait ce qui est dans le return
+                return <p>{tip}</p>
+             })}
+                </div>
         </div>
         <div className="detailCharacterRightPart">
+            {/* <div className="passiveChampion">
+            <h2>{champion.passive.name}</h2>
+            {champion.passive &&
+             <div> 
+             <img src={"https://ddragon.leagueoflegends.com/cdn/14.21.1/img/passive/"+champion.passive.image.full} alt="" />
+             <p>{champion.passive.description}</p>
+             </div>
+             }
+             </div> */}
             <div>
                 {champion.spells && champion.spells.map((spell, index) => {
                 return (

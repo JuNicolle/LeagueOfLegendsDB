@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .detailCharacter{
@@ -42,6 +42,22 @@
   padding-top: 4vh;
   width: 40vw;
   color: rgb(83, 36, 66)
+}
+
+#tipsSection{
+  margin-bottom: 4vh;
+}
+
+.passiveChampion{
+  display: flex;
+}
+
+.passiveChampion img{
+  width: 4vw;
+  height: 4vw;
+  border-radius: 25px;
+  border: white 2px solid;
+  box-shadow: 0 0 0px -5px white;
 }
 
 .detailCharacterRightPart{
