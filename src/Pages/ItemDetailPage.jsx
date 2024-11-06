@@ -37,8 +37,8 @@ const ItemDetailPage = () => {
            <img src={"https://ddragon.leagueoflegends.com/cdn/14.21.1/img/item/"+currentItem.image.full} />
            <p>{currentItem.plaintext}</p>
            <div className='d-flex gap-3'>
-                {currentItem.into.map((obj)=>{
-                    return <img src={"https://ddragon.leagueoflegends.com/cdn/14.21.1/img/item/"+obj+".png"} />
+                {currentItem.into && currentItem.into.map((obj)=>{
+                    return <img key={obj} src={"https://ddragon.leagueoflegends.com/cdn/14.21.1/img/item/"+obj+".png"} />
                 })}
            </div>
         </Container>

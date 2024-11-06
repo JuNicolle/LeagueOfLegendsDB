@@ -10,6 +10,9 @@
   font-family: Arial, Helvetica, sans-serif;
   color: orange;
 }
+#root{
+  min-height: 100vh;
+}
 
 .bodyBody{
   background-image: url(assets/detailpagewallpaper.jpeg);
@@ -17,8 +20,18 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: 100%;
+  min-height: 100vh;
+  position: absolute; /* Fixe le fond en haut de la page */
+  top: 0;
+  left: 0;
 }
+
+.backgroundPage{
+  background-image: url(./assets/wallpaper.jpg);
+  position:static;
+  height: max-content;
+  min-height: 93.5vh;
+  }
 
 .detailCharacter{
   display: flex;
@@ -100,5 +113,20 @@
 .spellName{
   display: flex;
   justify-content: space-between;
+  gap: 2vw;
+}
+
+.searchChampionBar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  width: 50vw;
+  align-items: center;
+}
+
+.divSearchChampion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2vw;
 }
