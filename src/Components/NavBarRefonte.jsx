@@ -16,8 +16,7 @@ const NavBarRefonte = () => {
                     <Link className="linkNavBar" to={"LorePage"} href="#action2">Histoire</Link>
                     <Link className="linkNavBar" to={"/ChampionsPage"} href="#action3">Champions</Link>
                     <Link className="linkNavBar" to={"/ItemsPage"} href="#action4">Items</Link>
-                    <Link className="linkNavBar" to={"/RegionsPage"} href="#action4">Regions</Link>
-                    
+                    <Link className="linkNavBar" to={"/SummonersPage"} href="#action4">Summoners</Link>  
                 </Nav>
             </Container>
         </Navbar>
